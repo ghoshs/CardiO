@@ -1,0 +1,54 @@
+chat_model:
+  api_key: "YOUR_API_KEY"
+  model: gpt-3.5-turbo-0613
+  max_retries: 6  
+  max_tokens: 400
+  temperature: 0
+  request_timeout: 30
+rag_model:
+  api_key: "YOUR_API_KEY"
+  model: gpt-3.5-turbo-16k-0613
+  max_retries: 6  
+  max_tokens: 400
+  temperature: 0
+  request_timeout: 30
+count_extraction:
+  api_key: "YOUR_API_KEY"
+  model: gpt-3.5-turbo-0613
+  max_retries: 6  
+  max_tokens: 200
+  temperature: 0
+  request_timeout: 30
+sentence_filter:
+  api_key: "YOUR_API_KEY"
+  model: gpt-3.5-turbo-0613
+  max_retries: 6  
+  max_tokens: 200
+  temperature: 0
+  request_timeout: 30
+spacy:
+  model: en_core_web_trf-3.6.1
+retriever:
+  custom_config: YOUR_CUSTOM_CONFIG
+  url: https://api.bing.microsoft.com/v7.0/custom/search
+  subscription_key: YOUR_SUBSCRIPTION_KEY
+  max_snippets: 50
+count:
+  span_prediction:
+    model_path: /path/to/coqex_model/
+    threshold: 0.5
+  sbert: sentence_transformers/multi-qa-mpnet-base-cos-v1
+central:
+  alpha: 0.9
+  node_weight: sentence
+  min_confidence_threshold: 0.0
+consistent:
+  alpha: 0.7
+  beta: 0.3
+  knn: 3
+  min_confidence_threshold: 0.0
+confident:
+  min_confidence_threshold: 0.0
+median:
+  min_confidence_threshold: 0.0
+cache_path: /path/to/cached/snippets/
