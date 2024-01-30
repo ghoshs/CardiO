@@ -1,0 +1,6 @@
+# ignore python cache and compiled files
+*/__pycache__
+*.pyc
+
+# ignore jupyterlab checkpoints
+*/.ipynb_checkpoints*
