@@ -1,4 +1,4 @@
-## Cardinality from Online Sources: CardiO
+## CardiO: Predicting Cardinality from Online Sources
 
 Count questions are an important type of information need, and in
 principle available on the Web, though often in noisy, contradictory,
